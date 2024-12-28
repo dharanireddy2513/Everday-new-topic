@@ -1,1 +1,13 @@
 SSL Certificate -
+
+ client(user) -------------GET --------------->Server 
+            <-------------RESPONSE ------------- 
+when get request is made  then response is send back .
+So middleman might sniff . (man in the middle attact), so we need to secure this .Encyprtion is need .- we need the key this is called symmetric encryption.So when the client send the data to server but the key is with client .
+we cant transfer the key directly to server because of hacker .
+we have to use assymetric enc! Public and private keys.By the public key from server the client encypts his key .that key is trasfered to server .by the private key with server opens the key .
+in this process also hacker can hack with this public key , send his public key to client  and use this private key. and also send some key to server .
+
+So wee need ssl certificate -
+we have a public key and SIGNATURE = SERVERPUBKEY + LETS ENCRYPT  ---- this is given to server
+server sends this certificate to client . client asks the lets encypt to send their certificate . he matches both of the certififcates and pub keys .
