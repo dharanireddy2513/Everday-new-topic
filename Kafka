@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=iIcamxDG-Vk&ab_channel=vishwajeetvishwakarma
+Kafka - distributed event store and realtime streaming platform .
+producer sends the message to the kafka brokers then costumer group use when needed. 
+message - 1. headers - carry meta data
+2. key- helps org 
+3. value - deploy payload 
+in broker the message are diveded into topics 
+advantages - handles multiple data , different consumer groups to read from same topic, can resume from failure in a process if you are left in middle .
+Kafka produer - batch messages to cut down a network traffic . 
